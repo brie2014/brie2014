@@ -1,0 +1,148 @@
+@import "normalize";
+
+@import "variables";
+
+
+html {
+    background-image: url("/images/background.jpg");
+    font-family: $mainFont;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header nav'
+    'header main';
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 125px 1fr;
+    margin: 3rem;
+}
+
+header {
+    grid-area: header;
+    background-color: $darkBlue;
+    color: $offWhite;
+    padding: 3rem;
+    font-family: $headingFont;
+    a {
+        color: $offWhite;
+        text-decoration: none;
+    }
+}
+
+nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    grid-area: nav;
+    background-color: $offWhite;
+    ul{
+        margin:0; 
+        padding: 0;}
+    li {
+        background-color: $darkBlue;
+        list-style-type: none;
+        width: 50%; float: left;}
+    a {
+        display: block;
+        padding: .8rem 0; /*44px min*/
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+        }
+    a:hover {
+        background-color:$lightBlue;
+        color: $darkBlue;
+        
+    }
+}
+
+main {
+    grid-area: main;
+    background-color: $offWhite;
+    margin-bottom: 3rem;
+    padding: 1rem 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: $darkBlue;
+    
+}
+
+h4 {
+    margin-bottom: 0.25rem;
+}
+
+h5 {
+    margin: 0 0 0.5rem;
+    font-style: italic;
+}
+
+ul.contact-info {
+    padding: 0;
+}
+
+.contact-info {
+    li {
+        list-style-type: none;
+        padding: 0.5rem;
+    }
+
+    a {
+        color: $offWhite;
+        text-decoration: none;
+    }
+
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.exp-ed, .skills-tools-list {
+    margin-left: 2rem;
+    
+}
+
+.split-list {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 1rem 0;
+    
+    //justify-content: space-between;
+
+    h3{
+        margin: 0;
+        padding: 8px 0;
+    }
+
+
+    
+}
+
+ul.skills-tools-list {
+    padding: 0;
+    margin: 0 0 2rem 3rem;
+
+    li {
+       list-style: none;
+       padding: 0.5rem 0;
+    }
+
+}
+
+.summary {
+    font-style: italic;
+    line-height: 1.75;
+}
+
+
+//Wireframe Large https://wireframe.cc/FUlGQF
+//Wireframe Med 
+//Wireframe Small
+
+

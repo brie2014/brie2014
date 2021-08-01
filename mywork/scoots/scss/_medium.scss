@@ -1,0 +1,184 @@
+body {
+    font-size: 15px;
+}
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.responsive li {
+    display: block;
+    border: none;
+}
+
+.responsive li:first-child {
+    display: none;
+}
+
+nav ul li:first-child {
+    display: none;
+}
+main {
+    width: 720px;
+    margin: 0 auto;
+}
+.index  {
+    display: grid;
+    grid-template-areas: 
+            "head head"
+            "hero hero"
+            "vehicle weather"
+            "info info"
+            "pic pic";
+}
+
+.pictures {
+    grid-area: pic;
+    
+}
+
+header img {
+    width: 110px;
+}
+
+.herodiv{
+    .herotext {
+        display: flex;
+        flex-direction: column;
+    
+        h3{
+            margin: 0;
+            top: 1rem;
+            left: 2rem;
+            }
+    
+       .welcome {display: block;
+            padding: 0.75rem;
+            bottom: 1rem;
+            right: 2rem;
+            p {display:block;}  
+            }//end .welcome  
+        }//end .herotext
+}//end .herodiv
+
+    
+footer h3 {
+    text-align: left;
+}
+
+.map-contact {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 1rem;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.map a img {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+
+.map-link {
+display: none;
+} 
+
+.social-media-icons {
+    justify-content: flex-start;
+}
+
+.rental-cards {
+    grid-template-columns: 50% 50%;
+}
+
+.columns {
+    display: flex;
+}
+
+
+form fieldset {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+.question-list, .rental-pics  {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.question-list {
+    width: 40%;
+    img {
+        object-fit: contain;
+    }
+}
+
+.answers {
+    width: 60%;
+}
+
+.hidesmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rental-pics {
+    width: 30%;
+    text-align: center;
+    border: solid 2px $accentBlue;
+    background-color: white;
+    border-radius: 8px;
+
+    img {
+        width: 95%;
+        padding: 2.5%;
+        margin-bottom: 1rem;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+    form
+    {
+        width: 70%;
+    }
+     fieldset {
+        padding: 1rem;
+        margin: 1.75rem;}
+
+        .submitBtn {
+            width: 50%;
+            margin: 0rem 2rem 2rem;
+            font-size: 1.5rem;
+        }
+
+.thingstodo {
+    h3 {
+        display: block;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.confirmation {
+    width: 60%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.nextsteps {
+    width: 40%;
+}
+
+

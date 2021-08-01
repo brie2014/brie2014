@@ -1,0 +1,581 @@
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+  }
+
+body {
+    font-size: 14px;
+    background-color: $main;
+}
+
+main {
+    margin: 0 auto;
+}
+
+
+h2, h3, h4, p, table {
+    padding: 0 1rem;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+p, li, table, a, td, tr {
+    font-family: $paragraphFont;
+}
+
+img {
+    object-fit: contain;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color:$accentBlue;
+    border-radius: 2px;
+
+    img {
+        width: 100px;
+        margin-right: 1em;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-family: $headerFont;
+        color: $white;
+        font-size: 4rem;
+        margin: 0;
+    }
+    
+    .motto {
+        font-style: italic;
+        font-family: $paragraphFont;
+        color: $white;
+    }
+}
+
+nav {
+    background-color: $accentBlue;
+
+    ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+        li {
+
+        a {
+            letter-spacing: 0.1rem;
+            font-family: $headingFont;
+            text-align: center;
+            font-size: 1.25em;
+            display: block;
+            padding: 1.25em;
+            text-decoration: none;
+            color: $white;
+            font-weight: 600;
+        }
+        
+        :hover {
+        background-color: $fadedWhite;
+        color: $accentBlue;
+        }
+        }//end li
+    }//end ul
+
+    .active {
+        background-color: $fadedWhite;
+        
+        
+        a {
+            color: $accentBlue;
+            background-color: $white;
+        } 
+    }
+}//end nav   
+
+.responsive {
+    li {
+    display: none;}
+
+    li:first-child {
+    display: block;
+    border: none;}
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: $headerFont;
+    padding: 1rem;
+    color: $accentBlue;
+    background-color: $white;
+    border: solid 5px $accentRed;
+    border-radius: 8px;
+    grid-area: head;
+}
+
+h3 {
+    color: $accentRed;
+    font-family: $headingFont;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+h4 {
+    font-family: $headerFont;
+}
+
+.container {
+    background-color: $white;
+    border: solid 15px $accentLight;
+    border-radius: 8px;
+}
+
+
+.herodiv {
+    grid-area: hero;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    text-align: center;
+    
+    .herotext {
+        h3{
+            text-align: left;
+            padding: 1rem;
+            position: absolute;
+            top: 0.5rem;
+            left: 1rem;
+            font-size: 2rem;
+            margin:0;
+            }
+            .welcome {display: block;
+                text-align: right;
+                padding: 0.5rem;
+                position: absolute;
+                bottom: 0.5rem;
+                right: 1rem;
+                margin-left: 50%;
+                border-radius: 0.75rem;
+                background-color: $fadedWhite;
+                p {display:none;}
+                }//end .welcome    
+            }//end .herotext
+    }//end .herodiv
+
+.herodiv img, .pictures img, .container {
+        box-shadow: 8px 8px 8px gray;
+        border-radius: 8px;
+        max-width: 100%;
+    }
+ 
+.vehicle-list {
+    grid-area: vehicle;
+    margin: 1rem;
+    text-align: center;
+        
+        ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1.1rem;
+       }
+    
+        h4 {
+            font-size: 1.25rem;}     
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    
+    button {
+    height: 5rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    }
+}
+
+button {
+    font-family: $paragraphFont;
+    font-size: 1.5rem;
+    background-color: $accentBlue;
+    color: $white;
+    border-radius: 8px;
+    }
+
+    .current-weather {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        section, img{
+            width: auto;
+        }//end section, img
+    }//end .current-weather
+
+.forecast {
+    grid-area: weather;
+    margin: 1rem;
+    text-align: center;
+}
+
+.five-day-table {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 1em;
+    padding: 0;
+
+    thead {
+        background-color: $accentBlue;
+        color: $white;
+    }
+
+    tr td, th {
+        border: 1px solid $black;
+        padding: 1em;
+        text-align: center;
+    }
+}
+
+.pictures {
+    display: flex;
+    img {
+        width: 33%;
+    } 
+}
+    
+
+.rental-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+
+    div {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    img {
+        object-fit: contain;
+    }
+     
+    table td:first-child {
+        background-color: $accentBlue;
+        color: $white;
+        width: 40%;
+    }
+
+    table td:nth-child(2) {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+.reserveBtn {
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+}
+.contact-info {
+    text-align: center;
+}
+
+.map-contact {
+    grid-area: info;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.map a img {
+        display: none;
+    }
+
+.map-link {
+    display: block;
+} 
+
+.columns-large {
+    display: block;
+    margin: 0 auto;
+
+    >div, form {
+        margin: 1rem;
+        width: 90%;
+    }
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    
+}
+
+.social-media-icons img {
+    flex: 1 1 100%;
+    max-width: 30px;
+    margin-right: 1em;
+    background-color: $fadedWhite;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 2rem;
+    font-family: $paragraphFont;
+        background-color: $accentBlue;
+        text-align: center;
+        padding: 1rem 0;
+        color: $white;
+        
+
+    a, h3{color: $white;
+        
+    }
+
+}
+
+ul {
+    margin: 0rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+    line-height: 1.5rem;
+}
+
+.columns {
+    display: block;
+
+    > div, form{
+        margin: 1rem;
+    }
+}
+
+iframe {
+    margin: 5%;
+    max-width: 90%;
+}
+
+.locations {
+    text-align: center;
+}
+
+.hidesmall {
+    display: none;
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0rem;
+    margin: 0rem;
+    legend {
+        display: none;
+    }
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    
+    fieldset {
+        padding: 1rem;
+        margin: 1rem;
+        color: $accentBlue;
+        background-color: $white;
+        border: solid 2px $accentRed;
+        border-radius: 8px;
+        
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        label {
+            padding: 0.5rem;
+            
+        }
+
+        input, textarea, select {
+            background-color: rgba($accentBlue, 0.3);
+            border: rgba($accentBlue, 0.5);
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+
+        ul {
+            background-color: rgba($main, 0.3);
+            border-radius: 8px;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sbs {
+            display: flex;
+        }
+
+
+        .padding {
+            margin-right: 1rem;
+        }
+
+        .radio-question {
+            padding: 1rem;
+        }
+
+        .agreement {
+            font-style: italic;
+            background-color: rgba($main, 0.3);
+            padding: 0.5rem;
+            margin: 1rem;
+            text-align: center;
+            border-radius: 8px;
+            color: $accentRed;
+        }
+
+        input:required, select:required {
+            border-left: $accentRed solid 6px;
+        }
+
+        input:required:valid, select:required:valid{
+            border-left: none;
+        }
+
+    }
+    .submitBtn, {
+        width: 60%;
+        padding: 1rem;
+        margin: 1rem;
+    font-family: $paragraphFont;
+    font-size: 1.25rem;
+    background-color: $accentBlue;
+    color: $white;
+    border-radius: 8px;
+        }
+}
+
+.answers {
+    margin-top: 2rem;
+    h4 {
+    color: $accentBlue;
+    font-family: $headingFont;
+    font-size: 1.15rem;
+    margin: 2rem auto 0rem;
+    }
+    p {margin: 0.5rem auto 2rem;
+    }
+}
+
+.todo {
+    border: 5px solid $accentBlue;
+    border-radius: 8px;
+    
+    img {
+        width: 80%;
+        margin: 0 auto;}
+    a {
+        text-decoration: none;
+        :hover {
+            text-decoration: underline;}
+        }
+
+}
+
+.todo:hover, button:hover {
+    box-shadow: 8px 8px 8px rgba($black, 0.4);
+}
+
+.tour-page {
+    display: grid;
+    grid-template-areas:
+    "heading heading" 
+    "places places"
+    "history history"
+    "funfacts funfacts";
+
+    grid-template-columns: 1fr 1fr;
+
+    >div {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    h2 {
+        grid-area: heading;
+    }
+    .history {
+        grid-area: history;
+    }
+    .funfacts {
+        grid-area: funfacts;
+    }.places {
+        grid-area: places;
+    }
+}
+
+.center, .todo {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.todo a {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.todo {
+    background-color: $white;
+}
+
+.funfacts {
+    background-color: $white;
+    border-radius: 8px;
+ul {
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+a {
+    margin: 1rem;
+}
+li {
+    margin-bottom: 1rem;
+}
+}
+
+.special {
+    text-align: center;
+    padding: 1rem;
+    border-bottom: dashed 2px $accentBlue;
+    border: dashed 2px $accentBlue;
+    margin: 2rem;
+}
+
