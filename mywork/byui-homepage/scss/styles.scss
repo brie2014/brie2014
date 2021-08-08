@@ -1,0 +1,88 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+$sm-font-size: 14px;
+$lg-font-size: 16px;
+
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+body {
+  margin: 0;
+  font-size: $sm-font-size;
+  font-family: "BYUI Open Sans","Open Sans","Lucida Sans Unicode","Lucida Grande",Verdana,sans-serif;
+}
+
+main {
+  padding: 0 3%;
+  display: grid;
+}
+
+button {
+  margin: 1rem 1rem;
+  background-color: $byui-blue;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  a {
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+  }
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+
+a {
+  cursor: pointer;
+  color: $link-blue;
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+
+@import 'header';
+@import 'interest-box';
+@import 'asides';
+@import 'newsroom';
+@import 'footer';
+@import 'large';
+
+

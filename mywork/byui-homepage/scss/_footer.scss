@@ -1,0 +1,17 @@
+
+.footer-graphic::before {
+    background: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic_fixed.png) bottom no-repeat;
+    content: "";
+    display: block;
+    height: 146px;
+    padding: 0;
+  }
+  
+  footer .footer-graphic::after {
+    background-color: #EAEAEA;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #C6C7C8;
+    content: "";
+    display: block;
+    padding: 30px;
+  }

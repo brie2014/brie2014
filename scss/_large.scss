@@ -1,0 +1,46 @@
+html {
+    font-size: 14px;
+    background-color: white;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header nav'
+    'header main';
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 125px 1fr;
+    margin: 3rem;
+}
+
+header {
+    text-align: left;
+    padding: 3rem;
+
+    img {
+        position: static;
+        height: auto;
+    }
+}
+
+nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    background-color: $offWhite;
+
+}
+
+main {
+    margin-bottom: 3rem;
+    padding: 1rem 3rem;
+}
+
+ul.project-list {
+    .project-video {
+        flex-direction: column;
+    }
+    li .iframe-container {
+        display: block;
+    }
+
+}

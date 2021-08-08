@@ -1,0 +1,193 @@
+html {
+    font-size: 11px;
+    font-family: $mainFont;
+    background-color: $offWhite;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'main';
+}
+
+header {
+    grid-area: header;
+    background-color: $darkBlue;
+    color: $offWhite;
+    padding: 2rem;
+    font-family: $headingFont;
+    text-align: center;
+    a {
+        color: $offWhite;
+        text-decoration: none;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h1, h2, ul {
+        margin: 0.5rem;
+        li {
+            margin: 1rem;
+        }
+    }
+
+    img {
+        height: 150px;
+        margin: 0.5rem;
+    }
+    
+    
+}
+
+nav {
+    grid-area: nav;
+    background-color: $darkBlue;
+    ul{
+        margin:0; 
+        padding: 0;}
+    li {
+        background-color: $darkBlue;
+        list-style-type: none;
+        width: 50%; float: left;}
+    a {
+        font-family: $headingFont;
+        font-size: 1.25rem;
+        display: block;
+        padding: .8rem 0; /*44px min*/
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+        }
+    a:hover {
+        background-color:$lightBlue;
+        color: $darkBlue;
+        
+    }
+}
+
+main {
+    grid-area: main;
+    background-color: $offWhite;
+    padding: 1.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: $darkBlue;
+    
+}
+
+h4 {
+    margin-bottom: 0.1rem;
+}
+
+h5 {
+    margin: 0 0 0.25rem;
+    font-style: italic;
+}
+
+ul.contact-info {
+    padding: 0;
+}
+
+.contact-info {
+    margin-top: 1rem;
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        color: $offWhite;
+        text-decoration: none;
+    }
+
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.exp-ed, .skills-tools-list {
+    margin-left: 1rem;
+    
+}
+
+.split-list {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 1rem 0;
+
+   
+
+    h3{
+        margin: 0;
+        padding: 8px 0;
+    }
+
+
+    
+}
+
+ul.skills-tools-list {
+    padding: 0;
+    margin: 0 0 2rem 3rem;
+
+    li {
+       list-style: none;
+       padding: 0.5rem 0;
+    }
+
+}
+
+.summary {
+    font-style: italic;
+    line-height: 1.75;
+}
+
+
+ul.project-list {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+       list-style: none;
+       padding: 1rem;
+       margin: 1rem;
+       background-color: white;
+       border: 4px solid $darkBlue;
+       border-radius: 10px;
+       width: 75px;
+       height: 75px;
+       text-align: center;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       font-size: 1.3rem;
+       font-weight: bold;
+            a {
+                text-decoration: none;
+            }
+            .iframe-container {
+                display: none;
+            }
+    }
+
+    li:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);;
+    }
+
+}

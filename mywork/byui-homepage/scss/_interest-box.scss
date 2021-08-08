@@ -1,0 +1,46 @@
+.interest-box {
+    margin: 2rem auto; 
+    max-width: fit-content;  
+}
+
+figure {
+    border: 1px solid $med-gray;
+    max-width: fit-content;
+
+    figcaption {
+        padding: 6px 12px;
+
+    }
+
+    span {
+        float: right;
+    }
+
+}
+
+.banner {
+    max-width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+      //flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+    h2{
+      font-weight: 200;
+      margin: 0.5rem;
+    }
+  
+    button {
+      min-width: fit-content;
+      margin: 0.5rem;
+    }
+  }
+  
+  .small-btn {
+    max-width: fit-content
+  }

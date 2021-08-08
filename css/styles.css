@@ -391,31 +391,38 @@ template {
   display: none; }
 
 html {
-  background-image: url("/images/background.jpg");
-  font-family: "Cabin", sans-serif; }
+  font-size: 11px;
+  font-family: "Cabin", sans-serif;
+  background-color: #e0dfe2; }
 
 body {
   display: grid;
-  grid-template-areas: 'header nav' 'header main';
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 125px 1fr;
-  margin: 3rem; }
+  grid-template-areas: 'header' 'nav' 'main'; }
 
 header {
   grid-area: header;
   background-color: #130253;
   color: #e0dfe2;
-  padding: 3rem;
-  font-family: "Cabin", sans-serif; }
+  padding: 2rem;
+  font-family: "Cabin", sans-serif;
+  text-align: center; }
   header a {
     color: #e0dfe2;
-    text-decoration: none; }
+    text-decoration: none;
+    margin: 0; }
+  header h2 {
+    font-size: 1.5rem; }
+  header h1, header h2, header ul {
+    margin: 0.5rem; }
+    header h1 li, header h2 li, header ul li {
+      margin: 1rem; }
+  header img {
+    height: 150px;
+    margin: 0.5rem; }
 
 nav {
-  margin-top: 3rem;
-  padding-top: 2rem;
   grid-area: nav;
-  background-color: #e0dfe2; }
+  background-color: #130253; }
   nav ul {
     margin: 0;
     padding: 0; }
@@ -425,6 +432,8 @@ nav {
     width: 50%;
     float: left; }
   nav a {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.25rem;
     display: block;
     padding: .8rem 0;
     /*44px min*/
@@ -438,29 +447,29 @@ nav {
 main {
   grid-area: main;
   background-color: #e0dfe2;
-  margin-bottom: 3rem;
-  padding: 1rem 3rem; }
+  padding: 1.5rem; }
 
 h3 {
   font-size: 1.5rem;
   color: #130253; }
 
 h4 {
-  margin-bottom: 0.25rem; }
+  margin-bottom: 0.1rem; }
 
 h5 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.25rem;
   font-style: italic; }
 
 ul.contact-info {
   padding: 0; }
 
-.contact-info li {
-  list-style-type: none;
-  padding: 0.5rem; }
-.contact-info a {
-  color: #e0dfe2;
-  text-decoration: none; }
+.contact-info {
+  margin-top: 1rem; }
+  .contact-info li {
+    list-style-type: none; }
+  .contact-info a {
+    color: #e0dfe2;
+    text-decoration: none; }
 
 .circle {
   border-radius: 50%; }
@@ -469,7 +478,7 @@ a:hover {
   cursor: pointer; }
 
 .exp-ed, .skills-tools-list {
-  margin-left: 2rem; }
+  margin-left: 1rem; }
 
 .split-list {
   display: flex;
@@ -489,5 +498,106 @@ ul.skills-tools-list {
 .summary {
   font-style: italic;
   line-height: 1.75; }
+
+ul.project-list {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  ul.project-list li {
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border: 4px solid #130253;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold; }
+    ul.project-list li a {
+      text-decoration: none; }
+    ul.project-list li .iframe-container {
+      display: none; }
+  ul.project-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2); }
+
+@media only screen and (min-width: 500px) {
+  html {
+    font-size: 13px;
+    background-image: url(../images/background.jpg); }
+
+  header {
+    padding: 2rem 2rem 0; }
+    header img {
+      margin: 0.5rem; }
+
+  body {
+    padding: 3rem; }
+
+  main {
+    padding: 1rem 3rem; }
+
+  h4 {
+    margin-bottom: 0.25rem; }
+
+  h5 {
+    margin: 0 0 0.5rem; }
+
+  .contact-info li {
+    padding: 0.5rem;
+    margin: 0; }
+
+  .exp-ed, .skills-tools-list {
+    margin-left: 2rem; }
+
+  ul.project-list {
+    justify-content: start; }
+    ul.project-list li {
+      height: auto;
+      width: fit-content; }
+    ul.project-list li:hover {
+      transform: scale(1.1);
+      box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2); } }
+/*end of media query */
+@media only screen and (min-width: 800px) {
+  html {
+    font-size: 14px;
+    background-color: white; }
+
+  body {
+    display: grid;
+    grid-template-areas: 'header nav' 'header main';
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 125px 1fr;
+    margin: 3rem; }
+
+  header {
+    text-align: left;
+    padding: 3rem; }
+    header img {
+      position: static;
+      height: auto; }
+
+  nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    background-color: #e0dfe2; }
+
+  main {
+    margin-bottom: 3rem;
+    padding: 1rem 3rem; }
+
+  ul.project-list .project-video {
+    flex-direction: column; }
+  ul.project-list li .iframe-container {
+    display: block; } }
+/*end of media query */
 
 /*# sourceMappingURL=styles.css.map */
