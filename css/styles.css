@@ -497,7 +497,8 @@ ul.skills-tools-list {
 
 .summary {
   font-style: italic;
-  line-height: 1.75; }
+  line-height: 1.75;
+  font-size: 1.1rem; }
 
 ul.project-list {
   padding: 0;
