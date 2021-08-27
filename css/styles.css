@@ -393,7 +393,7 @@ template {
 html {
   font-size: 11px;
   font-family: "Cabin", sans-serif;
-  background-color: #EDF5E1; }
+  background-color: #8EE4AF; }
 
 body {
   display: grid;
@@ -441,12 +441,12 @@ nav {
     text-align: center;
     text-decoration: none; }
   nav a:hover {
-    background-color: #EDF5E1;
+    background-color: #8EE4AF;
     color: #05386B; }
 
 main {
   grid-area: main;
-  background-color: #8EE4AF;
+  background-color: #EDF5E1;
   padding: 1.5rem; }
 
 h3 {
@@ -587,7 +587,7 @@ ul.project-list {
   nav {
     margin-top: 3rem;
     padding-top: 2rem;
-    background-color: #8EE4AF; }
+    background-color: #EDF5E1; }
 
   main {
     margin-bottom: 3rem;
