@@ -59,14 +59,14 @@ nav {
         font-size: 1.25rem;
         display: block;
         padding: .8rem 0; /*44px min*/
-        color: #eee;
+        color: $offWhite;
         text-align: center;
         text-decoration: none;
         }
-    a:hover {
+    a:hover, li.active a.active {
         background-color:$lightGreen;
         color: $darkBlue;
-        
+        border: 1px solid $darkBlue;
     }
 }
 

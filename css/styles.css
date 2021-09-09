@@ -437,12 +437,13 @@ nav {
     display: block;
     padding: .8rem 0;
     /*44px min*/
-    color: #eee;
+    color: #EDF5E1;
     text-align: center;
     text-decoration: none; }
-  nav a:hover {
+  nav a:hover, nav li.active a.active {
     background-color: #8EE4AF;
-    color: #05386B; }
+    color: #05386B;
+    border: 1px solid #05386B; }
 
 main {
   grid-area: main;
